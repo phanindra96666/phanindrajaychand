@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gastric cancer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+
+    <style>
+   
+      /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Soft background color */
+}
+
+.container {
+    max-width: 1100px; /* Set a max-width for content */
+    margin: 0 auto; /* Center align content */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #032406; /* Dark background color */
+}
+.mycolor{
+    color: #032406;
+}
+
+.navbar-brand img {
+    height: 55px;
+    width: 500px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+</head>
+<body>
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <div class="container font-monospace">
+        <a href="#" class="navbar-brand">
+            <!-- Add an image instead of text -->
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo"
+            style="height: 55px; width: 200px;margin-left: -70px; ">
+        </a>
+        <!-- For smaller screens -->
+        <button 
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>         
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="color: rgb(252, 252, 252);  margin-right: 50px; font-family:serif;font-size: 18px;"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#intro" class="nav-link" style="color: rgb(252, 252, 252); margin-right: 50px; font-family:serif;font-size: 18px;"><b>Introduction</b></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#precautions" class="nav-link" style="color: rgb(252, 252, 252); margin-right: 50px; font-family:serif;font-size: 18px;"><b>Precautions</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" style="color: rgb(252, 252, 252); margin-right: 50px; font-family:serif;font-size: 18px;"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#form" class="nav-link" style="color: rgb(252, 252, 252); margin-right: 50px; font-family:serif;font-size: 18px;"><b>Prediction</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Team Members" class="nav-link" style="color: rgb(252, 252, 252); font-family:serif;font-size: 18px;"><b>Team Members</b></a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar ends-->
+<!-- Home Section Starts -->
+<section class="bg-transparent text-dark px-5 text-center">
+    <div class="container" style="margin-top: 200px;">
+        <div class="">
+            <div class="font-monospace m-5 h1 size" style="font-size: 3.5rem; font-weight: bold; text-shadow: 2px 2px 4px rgb(252, 243, 243);">Predicting The Hepatic Disease!</div>
+            <h3 class="font-monospace mt-5" style="font-size: 1.5rem;font-weight: bold; text-shadow: 2px 2px 4px rgba(245, 243, 243, 0.971);">This website helps you detect Liver Disease using ML Algorithm</h3>
+            <div class="">
+                <a href="#intro">
+                    <button class="btn btn-outline-dark btn-lg m-5"><b>Know more About</b>,<br> Hepatic Disease</button>
+                </a> 
+                <a href="#form">
+                    <button class="btn btn-outline-dark btn-lg m-5"><b>Predict,</b><br> Check patient has Liver Disease</button>
+                </a> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Section Ends -->
+
+
+<!-- Introduction section start -->
+<section id="intro">
+    <div class="container" style="margin-top: -60px;">
+        <h1 class="font-monospace text-center" style="color: rgb(18, 16, 16); font-weight: bold;font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Introduction to Hepatic Disease</h1>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md ">
+                <img src="{{ url_for('static', filename='images/introo.jpg') }}" class="img-fluid mb-3" alt="About Image">
+
+            </div>
+            <div class="col-md pt-5">
+                <h5 class="mycolor" style="font-weight: bold;">What is Hepatic Diseases..?</h5>
+               <h5>
+                <p class="lead" style="font-weight:strong; color: rgb(6, 6, 6);"><b>
+                    Liver disease is a condition that affects the liver, the body's largest organ. The liver helps digest food, store energy, and remove poisons. There are many types of liver disease, including: <br>  <b>Acute:</b> Develops suddenly. <br> <b>Chronic: </b> Develops slowly over time. <br> <b>Viruses: </b> Such as hepatitis A, hepatitis B, and hepatitis C. <br>  <b>Inherited:</b> Such as hemochromatosis and Wilson disease Drugs, poisons, or too much. <br> <b>Alcohol:</b> Such as fatty liver disease and cirrhosis.</p>
+                </b><p style="font-weight:lighter; color: rgb(6, 6, 6);"><b>
+                </b></p></h5>
+                <a href="https://my.clevelandclinic.org/health/diseases/17179-liver-disease" class="btn btn-outline-primary btn-lg">
+                   <i class="bi bi-chevron-right"></i>  Read More
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Introduction section end -->
+
+<!-- Precaution section start-->
+<section id="precautions" class="p-5">
+    <div class="container">
+        <h1 class="font-monospace text-center" style="font-weight: bold;color: rgb(12, 10, 10); text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Precautions For Hepatic Disease</h1>
+        <div class="row align-items-center justify-content-between">
+            
+            <div class="col-md p-5">
+                <h5 class="text-primary" style="font-weight: bold;"></h5>
+                <p>
+                    <ol style="font-weight: bold; color: rgb(9, 8, 8);">
+                        <li><b style="color: red;">Healthy Diet:</b>Eat fruits, vegetables, and lean proteins, limit processed meats, salt, and smoked foods to reduce Liver Disease risk.</li> 
+                        
+                        <li><b style="color: red;">Tobacco and Alcohol: </b> Avoid tobacco; moderate alcohol intake to lower cancer risk.</li> 
+
+                        <li><b style="color: red;">Quit smoking:</b> Smoking can increase the risk of both liver cancer and cirrhosis of the liver. </li> 
+
+                        <li><b style="color: red;">Regular Screening: </b>Schedule routine check-ups for early detection and treatment.</li> 
+
+                    </ol>
+                </p>
+                <a href="https://www.cancer.org/cancer/types/stomach-cancer/causes-risks-prevention/prevention.html"><button class="btn btn-outline-primary btn-lg">Know more</button></a>
+                
+               
+
+            </div>
+            <div class="pt-5 col-md my-img-1">
+                <img src="https://images.squarespace-cdn.com/content/v1/5df4bfa5161a6e065dc1067a/e3833556-62bb-4576-a308-8babf9d62608/Love-Your-Liver-month.jpg" class="img-fluid my-img-1" alt="Precautions Image" style="width: 80%; height: 80%; ">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Precaution section end-->
+
+
+<!-- About section start -->
+<section id="about">
+    <div class="container  text-dark">
+        <h1 class="font-monospace text-center" style=" text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">About us</h1>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <video width="560" height="315" controls loop >
+                    <source src="{{ url_for('static', filename='images/Liver-video.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="col-md">
+                <li>Welcome to our website dedicated to predicting the recurrence of gastric cancer using machine learning technology. Gastric cancer, also known as stomach cancer, is a significant global health concern with high rates of recurrence after treatment. Our goal is to utilize the power of machine learning algorithms to improve our understanding of gastric cancer recurrence and ultimately enhance patient outcomes</li>
+                <ul>
+                    <li>The goal of predicting gastric cancer is to identify individuals at risk early, enabling timely interventions for prevention or effective treatment.</li> <br>
+                    <li><strong>Machine Learning Algorithms:</strong>The project We are used machine learning algorithm is
+                        <ul><li><b>Support Vector Machine (SVM)</b></li></ul>
+                       
+                     </li> <br>
+                </ul>
+                <a href="#" class="btn btn-outline-primary btn-lg">
+                   <i class="bi bi-chevron-right"></i> Home
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About section end -->
+<!-- form start -->
+<section id="form">
+    <h3 style=" margin-top: -120px; text-align: center;">Data Entry</h3> <br> <br>
+    <form action="/predict" method="post">
+        <!-- Add form fields based on your input features -->       
+        <label class="left" for="Age">Age:</label>
+        <input type="text" name="Age" required><br>
+
+        <label class="left" for="Gender">Gender: </label>
+        <input type="text" name="Gender" required><br>
+
+        <label class="left" for="Alkaline Phosphotase (IU/L)">Alkaline Phosphotase (IU/L):</label>
+        <input type="text" name="Alkaline Phosphotase (IU/L)" required><br>
+
+        <label class="left" for="SGPT/ALT (U/L)">SGPT/ALT (U/L):</label>
+        <input type="text" name="SGPT/ALT (U/L)" required><br>
+
+        <label class="left" for="SGOT/AST (U/L)">SGOT/AST (U/L):</label>
+        <input type="text" name="SGOT/AST (U/L)" required><br>
+
+        <label class="left" for="Total Bilirubin (mg/dL)">Total Bilirubin (mg/dL):</label>
+        <input type="text" name="Total Bilirubin (mg/dL)" required><br>
+
+        <label class="left" for="Direct Bilirubin (mg/dL)">Direct Bilirubin (mg/dL):</label>
+        <input type="text" name="Direct Bilirubin (mg/dL)" required><br>
+
+        <label class="left" for="Albumin (g/dL)">Albumin (g/dL):</label>
+        <input type="text" name="Albumin (g/dL)" required><br>
+
+        <label class="left" for="Total Proteins (g/dL)">Total Proteins (g/dL):</label>
+        <input type="text" name="Total Proteins (g/dL)" required><br>
+
+        <label class="left" for="Liver Disease">Liver Disease:</label>
+        <input type="text" name="Liver Disease" required><br> <br>
+
+        <button class="predict" type="submit">Predict</button>
+    </form>
+
+</section>
+
+<!-- card section start -->
+<section id="Team Members">
+<div class="container mb-3"> 
+<div class="row">
+<div class="col-sm-3" style="margin-right: 80px; margin-left: 60px;">
+<div class="card-box-shadow" >
+    <img class="card-img-top" src="{{ url_for('static', filename='images/cards.png') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Name: N.Phanindra</h5>
+      <p class="card-text">Roll Number: 20ME1A05B0</p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-3" style="margin-right: 80px;">
+    <div class="card-box-shadow">
+        <img class="card-img-top" src="{{ url_for('static', filename='images/female.png') }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Name: S. Leela Divyaja  </h5>
+          <p class="card-text">Roll Number: 20ME1A05C2</p>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-sm-3"style="margin-right: 50px;">
+        <div class="card-box-shadow">
+            <img class="card-img-top" src="{{ url_for('static', filename='images/cards.png') }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Name:  G.Sai Chandra Sekhar </h5>
+              <p class="card-text">Roll Number: 20ME1A0584 </p>
+              
+            </div>
+          </div>
+          
+        </div>
+</div>
+</div>
+</section>
+
+</body>
+
+</html>
