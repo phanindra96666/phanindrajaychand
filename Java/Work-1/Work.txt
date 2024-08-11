@@ -1,0 +1,15 @@
+No of digits 
+Sum of digits of num
+Sum of digits of until single digit
+Sum of natural numbers
+Product of natural numbers
+Digits in factorial
+Factors of num
+Gcd 
+Prime
+Armstrong
+Reverse
+Palindrome
+Power of 2
+Power of 4
+Fibonacci

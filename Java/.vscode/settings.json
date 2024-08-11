@@ -1,0 +1,43 @@
+{
+    "search.quickOpen.includeSymbols": false,
+    "search.searchEditor.reusePriorSearchConfiguration": false,
+    "search.seedOnFocus": false,
+    "search.showLineNumbers": false,
+    "search.smartCase": false,
+    "search.useGlobalIgnoreFiles": false,
+    "debug.allowBreakpointsEverywhere": false,
+    "debug.hideLauncherWhileDebugging": false,
+    "debug.openExplorerOnEnd": false,
+    "window.density.editorTabHeight": "default",
+    "window.autoDetectColorScheme": true,
+    "window.commandCenter": true,
+    "window.confirmSaveUntitledWorkspace": true,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.splitInGroupLayout": "horizontal",
+    "workbench.editor.showIcons": true,
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.scrollToSwitchTabs": false,
+    "workbench.editor.revealIfOpen": false,
+    "accessibility.accessibleView.closeOnKeyPress": true,
+    "window.closeWhenEmpty": true,
+    "window.zoomLevel": 1,
+    "accessibility.hideAccessibleView": true,
+    "git.ignoreLimitWarning": true,
+    "workbench.commandPalette.experimental.suggestCommands": false,
+    "workbench.commandPalette.preserveInput": false,
+    "workbench.experimental.cloudChanges.partialMatches.enabled": false,
+    "workbench.experimental.share.enabled": true,
+    "workbench.list.horizontalScrolling": false,
+    "workbench.list.scrollByPage": false,
+    "workbench.list.smoothScrolling": false,
+    "workbench.quickOpen.preserveInput": false,
+    "accessibility.signals.lineHasWarning": {
+        "announcement": "auto"
+    },
+    "accessibility.signals.notebookCellCompleted": {
+        "announcement": "auto"
+    },
+    "accessibility.signals.notebookCellFailed": {
+        "announcement": "auto"
+    }
+}
