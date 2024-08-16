@@ -13,6 +13,6 @@ public class fifth {
         Scanner in = new Scanner(System.in);
             int n = in.nextInt();
             agaCheck(n);
-        
+        in.close();
     }
 }

@@ -16,5 +16,6 @@ public class third {
         int b = in.nextInt();
 
         highNum(a,b);
+        in.close();
     }
 }

@@ -12,5 +12,6 @@ public class numm {
             }
             System.out.println();
         }
+        in.close();
     }
 }

@@ -8,5 +8,6 @@ public class table {
             System.out.print(n+"x"+i+"="+total);
             System.out.println();
         }
+        in.close();
     }
 }

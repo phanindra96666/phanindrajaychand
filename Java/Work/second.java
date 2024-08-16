@@ -15,6 +15,7 @@ public class second {
         int n = in.nextInt();
         int a=oddFun(n);
         System.out.println(a);
+        in.close();
     }
 }
 

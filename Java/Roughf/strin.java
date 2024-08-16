@@ -4,7 +4,7 @@ public class strin {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         in.nextLine();
-        String s = new String(in.nextLine());
+        String s =in.nextLine();
         System.out.println(n);
         System.out.println(s);
         in.close();

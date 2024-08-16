@@ -14,5 +14,6 @@ public class mail {
             }
         }
         System.out.println(name);
+        in.close();
     }
 }

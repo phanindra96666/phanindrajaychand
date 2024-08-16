@@ -4,7 +4,7 @@ public class maxsubarray {
         int max=0;
         int temp=0;
         for(int i=0;i<arr.length;i++){
-            if (temp<0){
+            if (temp<0) {
                 temp=arr[i];
             }
             else{
@@ -12,7 +12,7 @@ public class maxsubarray {
             }
             if (temp>max) {
                 max=temp;
-            }                
+            }
         }
         System.out.println(max);
     }

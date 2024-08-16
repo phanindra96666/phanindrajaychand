@@ -25,6 +25,7 @@ public class switc {
             break;
             default : System.out.print("Nothing");
         }
+        in.close();
     }
     
 }

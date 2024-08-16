@@ -1,4 +1,3 @@
-import java.util.*;
 public class com {
     public static void main(String[] args) {
         String name1="Phani";
@@ -10,5 +9,6 @@ public class com {
         else{
             System.out.println("Not equal");
         }
+        
     }
 }

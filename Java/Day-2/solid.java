@@ -11,6 +11,7 @@ public class solid {
             System.out.print("*");
         }
         System.out.println();
-    }     
+    }  
+    in.close();   
     }  
 }

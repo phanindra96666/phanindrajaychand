@@ -15,7 +15,7 @@ public class first {
             
             int avg=numAvg(a,b,c);
             System.out.println(avg);
-
+            in.close();
         }
     }
 

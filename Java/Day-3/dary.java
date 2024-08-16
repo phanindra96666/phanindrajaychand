@@ -17,5 +17,6 @@ public class dary {
             }
             System.out.println();
         }
+        in.close();
     }
 }

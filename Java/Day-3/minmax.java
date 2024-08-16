@@ -23,6 +23,7 @@ public class minmax {
         }
         System.out.println("its max number:"+ max);
         System.out.print("its min number:"+ min);
+        in.close();
     }
 
 }

@@ -111,6 +111,7 @@ public class LL {
          head = prevNode;
     }
 
+
     public void printList(){
         if (head == null) {
             System.out.println("List is empty");

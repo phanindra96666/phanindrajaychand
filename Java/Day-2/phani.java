@@ -9,5 +9,6 @@ public class phani {
         }
         System.out.println();
       }
+      in.close();
     }
 }
