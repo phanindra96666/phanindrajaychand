@@ -1,20 +1,18 @@
 public class Password_Checker {
 
-    public static void checkPasswordStrength(String password) {
+    public static String checkPasswordStrength(String password) {
         if (password.length() < 8) {
-            System.out.println("Password is not greater than 8 characters.");
+            return "Password is not greater than 8 characters.Please enter password length greater than 8";
         } else {
             boolean hasSpecialChar = password.matches(".*[!@#$%^&*()_?><,./';\\[\\]{}~].*");
-            boolean hasNumber = password.matches(".*\\d.*"); // \d matches any digit
+            boolean hasNumber = password.matches(".*\\d.*");
 
-            if (hasSpecialChar) {
-                if (hasNumber) {
-                    System.out.println("Your password is strong.");
-                } else {
-                    System.out.println("Your password does not contain any numbers.");
-                }
+            if (hasSpecialChar && hasNumber) {
+                return "Your password is strong.";
+            } else if (!hasSpecialChar) {
+                return "Your password does not contain any special characters.";
             } else {
-                System.out.println("Your password does not contain any special characters.");
+                return "Your password does not contain any numbers.";
             }
         }
     }
