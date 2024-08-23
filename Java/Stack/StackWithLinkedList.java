@@ -1,5 +1,5 @@
 public class StackWithLinkedList {
-
+    public static Node Head;
     static class Node {
         int data;
         Node next;
@@ -10,7 +10,6 @@ public class StackWithLinkedList {
     }
 
      static class Stack{
-        public static Node Head=null;
         public void push(int data){
             Node newNode = new Node(data);
             if (Head==null) {
