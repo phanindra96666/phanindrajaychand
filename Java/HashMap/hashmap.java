@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 public class hashmap {
     public static void main(String[] args) {
         HashMap<String , String> hm = new HashMap<String,String>();
@@ -8,13 +8,29 @@ public class hashmap {
         hm.put("Ts","HYD");
         hm.put("West Bengel", "Kolkata");
 
-        for(String i : hm.values()){
-            System.out.println(i);
+
+        for (Map.Entry<String , String> e : hm.entrySet()) {
+            System.out.print(e.getKey()+"-");
+            System.out.println(e.getValue());
         }
-        System.out.println();
-        for(String i : hm.keySet()){
-            System.out.println(i);
-        }
+
+
+        // if (hm.containsKey("Ts")) {
+        //     System.out.println("True");
+        // }
+        // else{
+        //     System.out.println("False");
+        // }
+
+        
+        // for(String i : hm.keySet()){
+        //     System.out.println(i);
+        // }
+        // System.out.println();
+        // for(String i : hm.values()){
+        //     System.out.println(i);
+        // }
+
         
 
         // System.out.println(hm);

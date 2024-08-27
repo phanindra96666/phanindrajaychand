@@ -10,9 +10,7 @@ public class LoginSystem {
         Scanner in = new Scanner(System.in);
 
         // Pre-populate with some users (for demonstration purposes)
-        userCredentials.put("user1", "password123");
-        userCredentials.put("user2", "mypassword");
-
+        userCredentials.put("user1", "password@123");
         boolean running = true;
         while (running) {
             if (loggedInUser == null) {
