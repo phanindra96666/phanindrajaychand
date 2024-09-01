@@ -10,7 +10,7 @@ public class perfect_number {
                 }
             }
                 if(n==sum){
-                    System.out.println("perfectnumber");
+                    System.out.println("perfect number");
                 }
                 else{
                     System.out.println("NOt perfect number");
