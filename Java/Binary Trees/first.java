@@ -31,7 +31,7 @@ public class first {
             if (root == null) {
                 return;
             }
-            System.out.print(root.data+" ");
+            System.out.print(root.data+" "); 
             perOrder(root.left);
             perOrder(root.right);
         }
@@ -89,7 +89,7 @@ public class first {
             }
             int leftNode = countOfNodes(root.left);
             int rightNode = countOfNodes(root.right);
-            return leftNode + rightNode + 1; // rood.data will give sum of Nodes
+            return leftNode + rightNode + 1; // root.data will give sum of Nodes insted of 1
         }
 
         public static int height (Node root){
@@ -125,8 +125,8 @@ public class first {
         // PostOrder(root);
         // System.out.println();
         // levelOrder(root);
-        // System.out.println(countOfNodes(root));
+         System.out.println(countOfNodes(root));
         // System.out.println(height(root));
-        System.out.println(diameter(root));
+        //System.out.println(diameter(root));
     }
 } 
