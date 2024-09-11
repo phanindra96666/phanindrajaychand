@@ -22,6 +22,7 @@ public class first {
         }
         return root;
     }
+    
     public static void inOrder(Node root){
         if (root == null) {
             return;

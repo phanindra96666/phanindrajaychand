@@ -102,10 +102,10 @@ public class LL {
         Node curNode = head.next;
         while (curNode!=null) {
             Node nextNode = curNode.next;
-            curNode.next=prevNode;
+            curNode.next=prevNode; // unlink the next node after curNode to pervNode
             //update
-            prevNode = curNode;
-            curNode=nextNode;
+            prevNode = curNode; // form currNode to null make the linkedlist to name as pervNode
+            curNode=nextNode; // make the nextNode to curNode
         }
          head.next = null;
          head = prevNode;

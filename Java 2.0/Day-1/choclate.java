@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class choclate {
     public static int chocolateDistribution(int[] arr,int m){
         if (arr.length==0 || m==0 || m > arr.length) {
