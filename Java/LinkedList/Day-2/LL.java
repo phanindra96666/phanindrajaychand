@@ -107,8 +107,8 @@ public class LL {
             prevNode = curNode; // form currNode to null make the linkedlist to name as pervNode
             curNode=nextNode; // make the nextNode to curNode
         }
-         head.next = null;
-         head = prevNode;
+        head.next = null;
+        head = prevNode;
     }
 
 
