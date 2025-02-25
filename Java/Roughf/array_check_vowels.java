@@ -1,12 +1,11 @@
 import java.util.Scanner;
-public class array {
-
+public class array_check_vowels {
     public static void checkVowel(String [] arr){
         for(String words : arr){
             boolean cv = false;
             for(int i=0;i<words.length();i++){
                 char c = words.charAt(i);
-                if (Character.toString(c).matches("[aeiouAEIOU]")) {
+                if (Character.toString(c).matches("[aeiouAEIOU]")){
                     cv = true;
                     break;
                 }

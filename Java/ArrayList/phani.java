@@ -7,18 +7,17 @@ public class phani {
         //Add list//
         list.add(3);
         list.add(2);
-        list.add(0);
+        list.add(1);
         System.out.println(list);
 
         //get list//
-        int ele = list.get(0);
-        System.out.println(ele);
+        System.out.println(list.get(0));
 
         //adding element in between //
         list.add(1,1);
         System.out.println(list);
 
-        //set element//
+        //set element by replacing//
         list.set(0,5);
         System.out.println(list);
 
@@ -32,10 +31,11 @@ public class phani {
 
         //loop//
         for(int i=0;i<size;i++){
-            System.out.print(list.get(i));
+            System.out.print(list.get(i)+" ");
         }
 
         System.out.println();
+        
         //sort list//
         Collections.sort(list);
         System.out.println(list);

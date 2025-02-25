@@ -3,7 +3,5 @@ public class append {
         StringBuffer sb = new StringBuffer("Hi ");
         sb.append("Hello");
         System.out.println(sb);
-        
-
     }
 }

@@ -1,12 +1,20 @@
 import java.util.*;
-import java.lang.Math;  
 public class Amstrong {
      public static boolean findAmstrong(int n){
         int total=0;
         int digit = 0;
         int temp = n;
         int last=0; 
+        // if (n == 0) {
+        //     digit = 1;  
+        // } else {
+        //     while (n != 0) {
+        //         n = n / 10;
+        //         digit++;
+        //     }
+        // }
         digit= (int) Math.log10(n)+1;
+        n=temp;
         while(temp>0){
         last= temp%10;
         total += (Math.pow(last, digit));

@@ -7,7 +7,7 @@ public class duplicate {
         for(int i=0;i<S.length();i++){
             for(int j=i+1;j<S.length();j++){
                 if(ch[i]==ch[j]){
-                    System.out.println(ch[i]);
+                    System.out.print(ch[i]);
                 }
             }
         }

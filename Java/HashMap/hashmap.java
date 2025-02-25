@@ -9,36 +9,39 @@ public class hashmap {
         hm.put("West Bengel", "Kolkata");
 
 
-        for (Map.Entry<String , String> e : hm.entrySet()) {
-            System.out.print(e.getKey()+"-");
-            System.out.println(e.getValue());
+        for (Map.Entry<String , String> entry : hm.entrySet()){
+            System.out.print(entry.getKey()+"-");
+            System.out.println(entry.getValue());
         }
 
+        System.out.println();
 
-        // if (hm.containsKey("Ts")) {
-        //     System.out.println("True");
-        // }
-        // else{
-        //     System.out.println("False");
-        // }
+        if (hm.containsKey("Ts")){
+            System.out.println("True");
+        }
+        else{
+            System.out.println("False");
+        }
 
+        System.out.println();
         
-        // for(String i : hm.keySet()){
-        //     System.out.println(i);
-        // }
-        // System.out.println();
-        // for(String i : hm.values()){
-        //     System.out.println(i);
-        // }
+        for(String i : hm.keySet()){
+            System.out.println(i);
+        }
+        System.out.println();
 
-        
+        for(String i : hm.values()){
+            System.out.println(i);
+        }
 
-        // System.out.println(hm);
-        // System.out.println(hm.get("Ts"));   
-        // hm.remove("Ts");
-        // System.out.println(hm);
-        // System.out.println(hm.size());
-        // hm.clear();
-        // System.out.println(hm);
+        System.out.println();
+
+        System.out.println(hm);
+        System.out.println(hm.get("Ts"));   
+        hm.remove("Ts");
+        System.out.println(hm);
+        System.out.println(hm.size());
+        hm.clear();
+        System.out.println(hm);
     }
 }

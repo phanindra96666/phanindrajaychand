@@ -10,9 +10,9 @@ public class sortascending {
         }      
         //Arrays.sort(sor);
         Arrays.sort(sor,Collections.reverseOrder()); 
+        System.out.print("Answer :");
         for(int i=0;i<n;i++){
-            System.out.print("Answer :");
-            System.out.println(sor[i]);
+            System.out.print(sor[i]+" ");
         }
         in.close();
     }

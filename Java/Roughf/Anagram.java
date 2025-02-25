@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 public class Anagram {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         String A = in.next();
         String B = in.next();

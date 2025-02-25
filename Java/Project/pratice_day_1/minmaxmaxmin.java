@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class minmaxmaxmin {
     public static void main(String args[]){
     Scanner in = new Scanner(System.in);
-    System.out.println("Give the size :");
+    System.out.print("Give the size :");
     int n = in.nextInt();
     int[] myarr = new int [n];
     for(int i=0;i<n;i++){
@@ -19,7 +19,7 @@ public class minmaxmaxmin {
         }
     }
     System.out.println("max :"+max);
-    System.out.println("min :"+min);
+    System.out.print("min :"+min);
     in.close();
 }
 }

@@ -7,7 +7,9 @@ public class ne {
         // Convert a string into a character array.
         String str = "Hello, world!";
         char[] chars = str.toCharArray();
-        System.out.println(chars);
+        for (int i = 0; i < chars.length; i++) {
+            System.out.print(chars[i]);
+        }
         // Convert a collection into an array.
         List<String> list = Arrays.asList("Hello", "world!");
         String[] strings = list.toArray(new String[0]);

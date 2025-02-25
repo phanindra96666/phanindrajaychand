@@ -1,9 +1,8 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class CharacterFrequency {
     public static void main(String[] args) {
-        Map<Character, Integer> map = new HashMap<>();
+        HashMap<Character,Integer> map = new HashMap<>();
         String S = "Hello";
         S = S.toLowerCase();
         char[] arr = S.toCharArray();
@@ -15,7 +14,7 @@ public class CharacterFrequency {
         }
 
         for (Map.Entry<Character, Integer> entry : map.entrySet()){
-            System.out.println(entry.getKey() + ": " + entry.getValue());
+            System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
 }

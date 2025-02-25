@@ -7,13 +7,13 @@ public class first {
 
         Node(int data){  //constructer
             this.data=data;
-            this.left=null;
-            this.right=null;
+            left=null;
+            right=null;
         }
     }
 
     static class BinaryTree { //innerClass
-        static int idx=-1;
+        static int idx=-1;//not inside initialize becouse of call recursive
         public static Node buildTree(int nodes[]) { //Method
             idx++;
             if (nodes[idx] == -1) {
@@ -99,7 +99,6 @@ public class first {
             int leftHeight = height(root.left);
             int rightHeight = height(root.right);
             int myHeight = Math.max(leftHeight, rightHeight)+1;
-
             return myHeight;
         }
 
@@ -116,8 +115,8 @@ public class first {
     @SuppressWarnings("static-access")
     public static void main(String[] args) {
         int nodes [] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        BinaryTree tree = new BinaryTree();
-        Node root = tree.buildTree(nodes);
+        BinaryTree tree = new BinaryTree();//object
+        Node root = tree.buildTree(nodes);//goes one by one.
         // perOrder(root);
         // System.out.println();
         // inOrder(root);
@@ -125,7 +124,7 @@ public class first {
         // PostOrder(root);
         // System.out.println();
         // levelOrder(root);
-         System.out.println(countOfNodes(root));
+        System.out.println(countOfNodes(root));
         // System.out.println(height(root));
         //System.out.println(diameter(root));
     }

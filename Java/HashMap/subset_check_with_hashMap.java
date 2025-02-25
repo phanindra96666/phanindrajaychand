@@ -6,7 +6,7 @@ public class subset_check_with_hashMap {
             map.put(i, map.getOrDefault(i,0) +1);
         }
         for(int i:arr2){
-            if (!map.containsKey(i)||map.get(i)==0) {
+            if (!map.containsKey(i) || map.get(i) == 0) {
                 return false;
             }
             map.put(i,map.get(i)-1);

@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class sort_arraylist {
-  public static void main(String[] args) {
+public class sort_arraylist{
+  public static void main(String[] args){
     Scanner in = new Scanner(System.in);
     int n = in.nextInt();
     ArrayList<Integer> myNumbers = new ArrayList<Integer>();
@@ -13,9 +13,9 @@ public class sort_arraylist {
     }
 
     Collections.sort(myNumbers, Collections.reverseOrder());
-    System.out.println("Answer: ");
+    System.out.print("Answer: ");
     for (int i : myNumbers) {
-      System.out.println(i);
+      System.out.print(i+" ");
     }
     in.close();
   }

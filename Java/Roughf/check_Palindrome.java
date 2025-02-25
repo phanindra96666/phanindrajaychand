@@ -1,6 +1,6 @@
 import java.util.*;
 public class check_Palindrome {
-   public static Boolean myfnc(String S) {
+   public static Boolean myfnc(String S){
       String result="";
       int len = S.length();
       for(int i=0;i<len;i++){
@@ -12,16 +12,11 @@ public class check_Palindrome {
       else{
          return false;
       }
-    }
-     public static void main(String args[]){
+   }
+      public static void main(String args[]){
          Scanner in = new Scanner(System.in);
          String S = in.next();
-         if(myfnc(S)){
-            System.out.println("True");
-         }   
-         else{
-            System.out.println("false");
-         }
+         System.out.print(myfnc(S));
          in.close();
-     }
+      }
 }

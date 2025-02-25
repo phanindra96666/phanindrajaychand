@@ -90,8 +90,7 @@ public class LL {
         }
         curNode.next=curNode.next.next;
     }
-
-
+    
     //PrintList
     public void printList(){
         if (Head==null) {
