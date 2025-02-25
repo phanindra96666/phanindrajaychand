@@ -1,6 +1,6 @@
 class LL {
     Node head;
-    static class Node {
+    static class Node { 
         int data;
         Node next;
 
@@ -9,65 +9,78 @@ class LL {
             this.next = null;
         }
     }
-    
+
     public void addFirst(int data){
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
             return;
         }
-        newNode.next=head;
+        newNode.next = head;
         head = newNode;
     }
 
     public void addLast(int data){
         Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
         Node curNode = head;
-        while (curNode.next!=null) {
+        while (curNode.next != null) {
             curNode = curNode.next;
         }
         curNode.next = newNode;
     }
 
     public void deleteFirst(){
-        if (head==null) {
+        if (head == null) {
             System.out.print("List is empty");
+            return;
         }
         head = head.next;
     }
 
     public void deleteLast(){
-        if (head==null) {
+        if (head == null) {
             System.out.print("List is empty");
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
         }
         Node secondLast = head;
         Node lastNode = head.next;
-        while (lastNode.next!=null) {
+        while (lastNode.next != null) {
             secondLast = secondLast.next;
             lastNode = lastNode.next;
         }
-        secondLast.next=null;
+        secondLast.next = null;
     }
 
-    public void addpos(int data,int pos){
-        if (head==null) {
+    public void addpos(int data, int pos){
+        if (head == null) {
             System.out.println("List is empty");
             return;
         }
         Node newNode = new Node(data);
         Node curNode = head;
         int count = 0;
-        while (curNode!=null && count<pos-1) {
-            curNode=curNode.next;
+        while (curNode != null && count < pos - 1) {
+            curNode = curNode.next;
             count++;
         }
-        newNode.next=curNode.next;
+        if (curNode == null) {
+            System.out.println("Position out of bounds");
+            return;
+        }
+        newNode.next = curNode.next;
         curNode.next = newNode;
     }
 
-    //Remove from Specific Position
     public void delpos(int pos){
-        if (head==null) {
+        if (head == null) {
             System.out.println("List is empty");
             return;
         }
@@ -82,80 +95,89 @@ class LL {
             return;
         }
 
-       Node curNode = head;
-       int count = 0;
-       Node newCurnode = head.next;
-       while (curNode!=null && count<pos-1) {
-            curNode=curNode.next;
-            newCurnode=newCurnode.next;
+        Node curNode = head;
+        int count = 0;
+        Node newCurnode = head.next;
+        while (curNode != null && count < pos - 1) {
+            curNode = curNode.next;
+            newCurnode = newCurnode.next;
             count++;
-       }
-       curNode.next = newCurnode.next;       
+        }
+        if (curNode == null || newCurnode == null) {
+            System.out.println("Position out of bounds");
+            return;
+        }
+        curNode.next = newCurnode.next;       
     }
 
-    //Reverse 
-        public Node ReverseRecursive(Node head){
-            if (head==null || head.next==null) {
-                return head;
-            }
-            Node newNode = ReverseRecursive(head.next);
-            head.next.next=head;
-            head.next=null;
-
-            return newNode;
+    public Node ReverseRecursive(Node head){
+        if (head == null || head.next == null) {
+            return head;
         }
+        Node newNode = ReverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return newNode;
+    }
 
     public void ReverseIterate(){
-        if (head==null || head.next==null) {
+        if (head == null || head.next == null) {
             return;
         }
         Node prevNode = null;
         Node curNode = head;
-        while (curNode!=null) {
+        while (curNode != null) {
             Node nextNode = curNode.next;
-            curNode.next=prevNode; // unlink the next node after curNode to pervNode
-            //update
-            prevNode = curNode; // form currNode to null make the linkedlist to name as pervNode
-            curNode = nextNode; // make the nextNode to curNode
+            curNode.next = prevNode; 
+            prevNode = curNode;
+            curNode = nextNode;
         }
-        head.next = null;
         head = prevNode;
     }
-    
 
     public void getMiddle (){
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
         Node curnode = head;
         Node curNext = head.next;
-        while (curNext!=null) {
-            curnode=curnode.next;
-            curNext=curNext.next.next;
+        while (curNext != null && curNext.next != null) {
+            curnode = curnode.next;
+            curNext = curNext.next.next;
         }
         System.out.println(curnode.data);
     }
+
     public void kth(int n){
         Node curNode = head;
         int len = 0;
-        while (curNode!=null) {
-            curNode=curNode.next;
+        while (curNode != null) {
+            curNode = curNode.next;
             len++;
         }
-        int res = len-n;
+        int res = len - n;
         if (res < 0 || res >= len) {
             System.out.println("Invalid value of n");
             return;
         }
         int result = 0;
         Node curnode = head;
-        while (res!=result) {
+        while (res != result) {
             result++;
             curnode = curnode.next;
         }
         System.out.println(curnode.data);
     }
+
     public void removeDublicate() {
+        if (head == null) {
+            return;
+        }
         Node curNode = head;
-        while (curNode.next!=null) {
-            if (curNode.data==curNode.next.data) {
+        while (curNode.next != null) {
+            if (curNode.data == curNode.next.data) {
                 curNode.next = curNode.next.next;
             }
             else {
@@ -163,12 +185,13 @@ class LL {
             }
         }
     }
+
     public void kth_beg_end(int n){
         Node temp = head;
         int len = 0;
-        while (temp!=null) {
+        while (temp != null) {
             len++;
-            temp=temp.next;
+            temp = temp.next;
         }
         if (n > len) {
             return;
@@ -178,7 +201,7 @@ class LL {
             first = first.next;
         }
         Node second = head;
-        for (int i = 1; i < len - n+1 ; i++) {
+        for (int i = 1; i < len - n + 1 ; i++) {
             second = second.next;
         }
         if (first != second) {
@@ -187,6 +210,7 @@ class LL {
             second.data = tempData;
         }
     }
+
     static Node reverse(Node head) {
         Node prev = null;
         Node curr = head;
@@ -200,7 +224,8 @@ class LL {
         }
         return prev;
     }
-    public static Node addNumbers(Node num1,Node num2){
+
+    public static Node addNumbers(Node num1, Node num2){
         Node res = null;
         Node curr = null;
         int carry = 0;
@@ -235,8 +260,8 @@ class LL {
             return;
         }
         Node curNode = head;
-        while (curNode!=null) {
-            System.out.print(curNode.data+"==>");
+        while (curNode != null) {
+            System.out.print(curNode.data + "==>");
             curNode = curNode.next;
         }
         System.out.println("Null");
@@ -251,36 +276,34 @@ class LL {
         System.out.print("Null");
     }
 
-public static void main(String[] args) {
-    LL List = new LL();
-    List.addFirst(5);
-    List.addFirst(10);
-    List.addFirst(8);
-    List.addFirst(5);
-    List.addFirst(9);
-    List.addFirst(3);
-    List.printList();
-    //List.removeDublicate();
-    //List.printList();
-    //List.ReverseIterate();
-    //List.printList();
-    // List.getMiddle();
-    // List.kth(3);
-    // List.kth_beg_end(2);
-    List.ReverseIterate();
-    List.printList(); 
-    //for add two numbers
-    // Node num1 = new LL.Node(1); 
-    // num1.next = new LL.Node(2);
-    // num1.next.next = new LL.Node(3);
+    public static void main(String[] args) {
+        LL List = new LL();
+        List.addFirst(5);
+        List.addFirst(10);
+        List.addFirst(8);
+        List.addFirst(5);
+        List.addFirst(9);
+        List.addFirst(3);
+        List.printList();
+        //List.removeDublicate();
+        //List.printList();
+        //List.ReverseIterate();
+        //List.printList();
+        // List.getMiddle();
+        // List.kth(3);
+        // List.kth_beg_end(2);
+        List.ReverseIterate();
+        List.printList(); 
+        //for add two numbers
+        // Node num1 = new LL.Node(1); 
+        // num1.next = new LL.Node(2);
+        // num1.next.next = new LL.Node(3);
 
-    // Node num2 = new LL.Node(9);
-    // num2.next = new LL.Node(9);
-    // num2.next.next = new LL.Node(9);
+        // Node num2 = new LL.Node(9);
+        // num2.next = new LL.Node(9);
+        // num2.next.next = new LL.Node(9);
 
-
-    // Node sum = addNumbers(num1, num2);
-    // List.printlist(sum);
-    
-}
+        // Node sum = addNumbers(num1, num2);
+        // List.printlist(sum);
+    }
 }
