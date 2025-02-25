@@ -81,7 +81,7 @@ class LL {
 
     public void delpos(int pos){
         if (head == null) {
-            System.out.println("List is empty");
+            System.out.println("List is empty"); 
             return;
         }
 
