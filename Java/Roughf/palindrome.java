@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class palindrome{
-
     public static boolean check(String s){
         String res = "";
         for(int i=0;i<s.length();i++){
