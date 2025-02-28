@@ -1,6 +1,5 @@
-import java.util.HashSet;
-import java.util.Set;
-public class maximum_Sum_Subarray {
+import java.util.*;
+public class maximum_Sum_Subarray { 
     public static int maxSumSubarrayWithDistinctElements(int[] arr, int k) {
         int n = arr.length;
         if (n<k) {
@@ -8,10 +7,10 @@ public class maximum_Sum_Subarray {
         }
         int maxSum = Integer.MIN_VALUE;
         for(int i=0;i<=n-k;i++){
-            Set<Integer> windowSet = new HashSet<>();
+            HashSet<Integer> windowSet = new HashSet<>();
             int currentSum = 0;
             for(int j=i;j<i+k;j++){
-                if (!windowSet.add(arr[j])) {
+                if (!windowSet.add(arr[j])){
                     currentSum = -1;
                     break;
                 }
@@ -20,7 +19,7 @@ public class maximum_Sum_Subarray {
             if (currentSum!=-1){
                 maxSum = Math.max(maxSum, currentSum);
             }
-           // System.out.println(windowSet);
+           //System.out.println(windowSet);
         }
          return maxSum;      
     }
