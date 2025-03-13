@@ -3,11 +3,11 @@ public class Sliding_Window_Maximum {
     public static ArrayList<Integer> maxOfSubarrays(int []arr ,int k){
         int n = arr.length;
         ArrayList<Integer> result = new ArrayList<>();
-        for(int i=0;i<=n-k;i++){
-            int max = arr[i];
-            for(int j=1;j<k;j++){
-                if (arr[i+j]>max) {
-                    max = arr[i+j];
+        for(int i=0;i<n-k;i++){
+            int max = arr[0];
+            for(int j=0;j<k;j++){
+                if (arr[j+i]>max) {
+                    max=arr[i+j];
                 }
             }
             result.add(max);
