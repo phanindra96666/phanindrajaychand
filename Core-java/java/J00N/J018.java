@@ -1,18 +1,22 @@
+// Create a Java Application where we have one class it contains a 
+// non static method m1 having parameter and return type, a static
+// method m2 having parameter as class variable and returns nothing 
+// then invoke m1 under m2 and m2 under main by providing dynamic inputs. 
+// Constrains: use direct referencing for all objects 
+// Donot use object creation syntax explicitly. 
+// Donot create multiple object references for same class 
+// Constrains applicable for both scanner and our class
+
 import java.util.Scanner;
 public class J018 {
-    static int a = 67;
-    Scanner in = new Scanner(System.in);
-
-    public boolean m1(String s) {
-        System.out.println("Calling M1");
-        return in.nextBoolean();
+    int m1(float a){
+        System.out.println(a);
+        return new Scanner(System.in).nextInt();
     }
-
-    public static void m2(int a) {
-        System.out.println("Calling M2");
-        obm1(String s);
+    static void m2(J018 obj){
+       System.out.println(obj.m1(new Scanner(System.in).nextFloat()));
     }
-    public static void main(String[] args) {
-        
-    }
+   public static void main(String[] args) {
+        m2(new J018());
+   }
 }
