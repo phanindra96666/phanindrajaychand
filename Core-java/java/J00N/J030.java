@@ -26,9 +26,7 @@ public class J030{
 		J030 obj = new J030();
 		J030 obj2 = new J030(in.nextInt(),in.next());
 		obj.m1(in.next().charAt(0));
-		obj.b;
-		obj.d;
-
-
+		System.out.print(obj.b);
+		System.out.print(obj.d);
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class J029{
 	static Scanner in = new Scanner(System.in);
 
-	public static int m1(double d) {
+	public int m1(double d) {
         	System.out.println("m1 calling");
                	return in.nextInt();
     	}
@@ -15,7 +15,7 @@ public class J029{
                	return in.next();
     	}
 
-    	public static char m3(String S) {
+    	public char m3(String S) {
         	System.out.println("m3 calling");
                	return in.next().charAt(0);  
     	}
@@ -35,7 +35,6 @@ public class J029{
 	}
 
 	public static void main(String[] args){ 
-		
 		J029 obj = new J029();
 		J029 obj2 = new J029(in.nextInt(),in.next());
 		J029 obj3 = new J029(in.nextInt(),in.next(),in.nextBoolean());
