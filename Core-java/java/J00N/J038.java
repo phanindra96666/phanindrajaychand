@@ -1,10 +1,9 @@
-/* Create a java application where we need to satficy this keyword and variable level , method level , constructor level in the single program one global and local variable 2 methods */
-
-
+/*Create a java application where we need to satficy this keyword and variable level ,
+ method level , constructor level in the single program one global and local variable 2 methods */
 
 import java.util.Scanner;
 public class J038{
-        static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 	int a = sc.nextInt();//0
 	String m1(int a){
 		System.out.println(this.a);//0

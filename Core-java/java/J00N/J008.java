@@ -12,6 +12,7 @@ public class J008 {
     }
 
     public boolean m3(float value) {
+
         return in.nextBoolean();
     }
 

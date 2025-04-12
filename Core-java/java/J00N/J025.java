@@ -4,7 +4,7 @@ public class J025{
 	J025(){
 		System.out.print("Hello");
 	}
-	public static void main(String[] args){ 
+	public static void main(String[] args){
 		J025 obj = new J025();
 	}
 }

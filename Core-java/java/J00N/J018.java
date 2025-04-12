@@ -9,12 +9,13 @@
 
 import java.util.Scanner;
 public class J018 {
+    static Scanner sc = new Scanner(System.in);
     int m1(float a){
         System.out.println(a);
-        return new Scanner(System.in).nextInt();
+        return sc.nextInt();
     }
     static void m2(J018 obj){
-       System.out.println(obj.m1(new Scanner(System.in).nextFloat()));
+       System.out.println(obj.m1(sc.nextFloat()));
     }
    public static void main(String[] args) {
         m2(new J018());
