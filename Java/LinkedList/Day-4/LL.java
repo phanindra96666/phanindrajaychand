@@ -120,5 +120,4 @@ public class LL {
         list.delpos(1);
         list.printList();
     }
-
 }

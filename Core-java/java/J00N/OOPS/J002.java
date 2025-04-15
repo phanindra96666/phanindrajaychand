@@ -12,33 +12,22 @@ import java.util.Scanner;
 
 class Mobile {
     static Scanner sc = new Scanner(System.in);
-    int ram;
-    String rom;
-    String osName;
-    String osVersion;
-    String camera;
-    String processor;
-    String battery;
-    String displayType;
-    int price;
+ 
+        int ram = sc.nextInt();
+        String rom = sc.nextLine();
+        String osName = sc.nextLine();
+        String osVersion = sc.nextLine();
+        String camera = sc.nextLine();
+        String processor = sc.nextLine();
+        String battery = sc.nextLine();
+        String displayType = sc.next();
+        int price = sc.nextInt();
 
-    void getFromUser() {
-        ram = sc.nextInt();
-        sc.nextLine();
-        rom = sc.nextLine();
-        osName = sc.nextLine();
-        osVersion = sc.nextLine();
-        camera = sc.nextLine();
-        processor = sc.nextLine();
-        battery = sc.nextLine();
-        displayType = sc.nextLine();
-        price = sc.nextInt();
-    }
 }
 
 class Wholesale extends Mobile {
     void increaseWholesalePrice(){
-        price += 10000;
+        price += 1000;
     }
 }
 
@@ -58,12 +47,12 @@ class Customer extends Retail {
         System.out.println("Processor: " + processor);
         System.out.println("Battery: " + battery);
         System.out.println("Display Type: " + displayType);
-        System.out.println("Final Price: ₹" + price);
+        System.out.println("Final Price: "+ price);
     }
-
+}
+class test{
     public static void main(String[] args) {
         Customer obj = new Customer();
-        obj.getFromUser();
         obj.increaseWholesalePrice();
         obj.increaseRetailPrice();
         obj.viewDetails();  

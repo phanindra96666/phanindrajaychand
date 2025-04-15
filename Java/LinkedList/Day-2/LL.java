@@ -4,7 +4,7 @@ class LL {
         int data;
         Node next;
 
-        Node(int data){ 
+        Node(int data){
             this.data = data;
             this.next = null;
         }
@@ -277,7 +277,7 @@ class LL {
     }
 
     public static void main(String[] args) {
-        LL List = new LL();
+        LL List = new LL();//constructor calling
         List.addFirst(5);
         List.addFirst(10);
         List.addFirst(8);
