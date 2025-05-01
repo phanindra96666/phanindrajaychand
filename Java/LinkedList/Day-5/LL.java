@@ -34,7 +34,6 @@ public class LL {
             curNode = newNode;
         }
         head.next = null;
-        head = prevNode;
     }
 
     public void delpos(int pos){
