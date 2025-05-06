@@ -5,20 +5,20 @@ class SingleLineCall{
 
     }
     void m1(int a , double d){
-
+        
     }
     static double m2(String s){
-       return sc.nextDouble(); //6
+       return sc.nextDouble(); 
     }
 
-    static String m3(byte b){//4
-        return sc.next();//5
+    static String m3(byte b){
+        return sc.next();
     }
-    int m4(float f){//2
-        return sc.nextInt();//3
+    int m4(float f){
+        return sc.nextInt();
     }
     public static void main(String[] args) {
-        SingleLineCall obj = new SingleLineCall(sc.next().charAt(0));//1
+        SingleLineCall obj = new SingleLineCall(sc.next().charAt(0));
         obj.m1(obj.m4(sc.nextFloat()),m2(m3(sc.nextByte())));
     }
 }

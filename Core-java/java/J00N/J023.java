@@ -1,8 +1,8 @@
-public class Main{
-	Main(int a){
+public class J023{
+	J023(int a){
 	   System.out.print(a);
 	}
 	public static void main(String[] args){
-		Main obj = new Main(10);
+		J023 obj = new J023(10);
 	}
 }

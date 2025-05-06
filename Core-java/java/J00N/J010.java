@@ -1,8 +1,7 @@
 import java.util.Scanner;
 public class J010 {
     static Scanner in = new Scanner(System.in);
-    static J010
-    obj = new J010();
+    static J010 obj = new J010();
     public int m1 (String s){
         System.out.print(s);
         return in.nextInt();

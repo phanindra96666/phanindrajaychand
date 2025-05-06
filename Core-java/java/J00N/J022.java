@@ -1,4 +1,8 @@
-/* create a java application having static m1 method with single parameter and return type and non static method m2 with single parameter and return type and static method m3 and return type with two parameters without return type invoke m1,m2 and m3 under main method providing main method condition m1 parameter and m2 return must be the parameters of m3 method parameters  */
+/* create a java application having static m1 method with single parameter and return type 
+and non static method m2 with single parameter and return type and static method m3 and 
+return type with two parameters without return type invoke m1,m2 and m3 under main method 
+providing main method condition m1 parameter and m2 return must be the parameters of m3 method 
+parameters  */
 
 import java.util.Scanner;
 public class J022 {

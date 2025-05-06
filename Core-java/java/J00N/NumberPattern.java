@@ -8,6 +8,6 @@ public class NumberPattern {
                 System.out.print(value + " ");
             } 
             System.out.println(); 
-        } 
+        }
     }
 }

@@ -1,5 +1,5 @@
 /*
- 
+
 */	
 import java.util.Scanner;
 class J013{
@@ -10,7 +10,7 @@ class J013{
 	String b = sc.next();
 	J013(){
 	System.out.print("Byee");
-	}
+	} 
 	public static void main(String[] args){
 	J013 obj = new J013();
 	}

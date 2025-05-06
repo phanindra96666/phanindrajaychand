@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class J037{
-        static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 	int a = sc.nextInt();
 	J037 (int a){
 		System.out.println(a);

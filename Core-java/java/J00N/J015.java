@@ -30,8 +30,7 @@ public class J015 {
         return in.nextBoolean();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         System.out.println(m1(in.nextDouble()));
-        
     }
 }

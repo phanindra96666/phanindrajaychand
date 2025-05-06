@@ -7,7 +7,6 @@ public class J032{
 	}
 
 	J032(J032 obj){
-
 		System.out.println("Hi");
 	}
 

@@ -5,14 +5,13 @@ public class J039{
     static Scanner sc = new Scanner(System.in);
 	int a;
 	float b;
-	J039(int x,float y){
-		this.a = x;
-		this.b = y;
+	J039(int a,float b){
+		this.a = a;
+		this.b = b;
 		System.out.println(a);
 		System.out.print(b);
 	}
 	public static void main(String[] args){
 	J039 obj = new J039(sc.nextInt(),sc.nextFloat());
-
 	}
 }

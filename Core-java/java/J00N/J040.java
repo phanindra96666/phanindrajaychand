@@ -26,7 +26,7 @@ public class J040{
 	public static void main(String[] args){
 	J040 obj = m2(sc.nextInt());
 	obj.m1();
-	System.out.print(obj.a);
+	System.out.println(obj.a);
 	System.out.print(obj.b);
 	}
 }

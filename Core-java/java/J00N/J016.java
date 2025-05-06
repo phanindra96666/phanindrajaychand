@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class J016 {
     static Scanner in = new Scanner(System.in);
-    static int x = in.nextInt(); //first
-    static boolean y = in.nextBoolean();//first
+    static int x = in.nextInt(); 
+    static boolean y = in.nextBoolean();
     long z = in.nextLong();
     short p = in.nextShort();
 

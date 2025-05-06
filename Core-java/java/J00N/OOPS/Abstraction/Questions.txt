@@ -1,0 +1,14 @@
+Create a java application where we have one abstract class which contains 2 abstract methods, 
+inherit this class into a concrete class and provide functionality for these abstract methods 
+and invoke all the properties under the main method by providing Dynamic inputs.
+
+
+Create a java application where we have one abstract class which contains 2 abstract methods and 
+one defined method, inherit this class into a concrete class and provide functionality for these 
+abstract methods and invoke all the properties under the main method by providing Dynamic inputs.
+
+
+Create a java application where we have one abstract class which contains 2 abstract methods 
+one defined method and one parameterized constructor, inherit this class into a concrete class 
+and provide functionality for these abstract methods and invoke all the properties under the 
+main method by providing Dynamic inputs.

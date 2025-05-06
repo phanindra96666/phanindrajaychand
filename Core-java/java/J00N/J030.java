@@ -1,6 +1,8 @@
-/*6.Create a Java Application where we have one static variable integer, two non-static variables Boolean and double, one non static method with parameter char and returns long value, a default constructor and a parameterized constructor. then invoke all the properties under main by providing dynamic inputs.  
+/*6.Create a Java Application where we have one static variable integer, 
+two non-static variables Boolean and double, one non static method with parameter 
+char and returns long value, a default constructor and a parameterized constructor. 
+then invoke all the properties under main by providing dynamic inputs.
 */
-
 
 import java.util.Scanner;
 public class J030{  
@@ -10,9 +12,9 @@ public class J030{
 	double d = in.nextDouble();
 
 	public long m1(char c) {
-        	System.out.println("m1 calling");
-               	return in.nextLong();
-    	}
+        System.out.println("m1 calling");
+        return in.nextLong();
+    }
 
 	J030(){
 		System.out.print("Default");
@@ -24,7 +26,7 @@ public class J030{
 
 	public static void main(String[] args){ 
 		J030 obj = new J030();
-		J030 obj2 = new J030(in.nextInt(),in.next());
+		new J030(in.nextInt(),in.next());
 		obj.m1(in.next().charAt(0));
 		System.out.print(obj.b);
 		System.out.print(obj.d);

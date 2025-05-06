@@ -1,9 +1,11 @@
-/*7 Create a java application where we need to create any two constructors and then invoke any one constructor under the main method from there it has to invoke the remaining constructor. (E.java)*/
+/*7 Create a java application where we need to create any two constructors and then 
+invoke any one constructor under the main method from there it has to invoke the 
+remaining constructor. (E.java)*/
 
 import java.util.Scanner;
 public class J031{
 	static Scanner in = new Scanner(System.in);
-
+	int a = in.nextInt();
 	J031(){
 		System.out.println("Default");
 	}

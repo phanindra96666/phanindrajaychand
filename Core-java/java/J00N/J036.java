@@ -3,13 +3,15 @@ Create a java application where we have one class it contains constructors like 
 */
 import java.util.Scanner;
 public class J036{
-        static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+	boolean a = sc.nextBoolean();
 	J036 (){
 		this(sc.nextInt());
 	}
 
 	J036 (int a){
 		System.out.print(a);
+		
 	}
 
 	J036 (String s, boolean b){
