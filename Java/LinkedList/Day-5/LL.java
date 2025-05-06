@@ -33,7 +33,6 @@ public class LL {
             prevNode = curNode;
             curNode = newNode;
         }
-        head.next = null;
         head = prevNode;
     }
 
