@@ -38,6 +38,7 @@ public class PrintDate {
         }
 
         System.out.println("Day of the week: " + dayName);
+        sc.close();
     }
 
     static boolean isLeapYear(int year) {
