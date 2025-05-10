@@ -6,59 +6,71 @@ then inherit this class into a concrete class where we need to provide functiona
 all the abstract methods and invoke all the properties under main by providing dynamic inputs.*/
 
 import java.util.Scanner;
-interface A {
-    int m1(int n);
+import static java.lang.System.out;
+interface I1{
+	int m1(float a);
 }
-interface B {
-    double m2(String s);
+interface I2{
+	boolean m2(char c);
 }
-interface C extends A,B{
-    String m3(Double d);
-    default void m4(){
-        System.out.println("HI");
-    }
+interface I extends I1,I2{
+	Scanner sc = new Scanner(System.in);
+	static double m3(long l){
+		out.println(l);
+		return sc.nextDouble();
+	}
+	long m4(double d);
 }
-abstract class D implements C{
-    static Scanner sc = new Scanner(System.in);
-    D(int n){
-        System.out.println(n);
-    }
-    int m5(String s){
-        return sc.nextInt();
-    }
-    abstract void m6();
+abstract class A implements I{
+	A(int a){
+		out.println(a);
+	}
+	char m5(boolean b){
+		out.println(b);
+		return sc.next().charAt(0);
+	}
+	abstract float m6(int a);
+}
+class B extends A{
+	B(){
+		super(sc.nextInt());
+	}
+	@Override
+	public int m1(float a){
+		out.println(a);
+		return sc.nextInt();
+	}
+	@Override
+	public boolean m2(char c){
+		out.println(c);
+		return sc.nextBoolean();
+	}
+	@Override
+	public long m4(double l){
+		out.println(l);
+		return sc.nextLong();
+	}
+	@Override
+	float m6(int a){
+		out.println(a);
+		return sc.nextFloat();
+	}
 }
 
-public class J004 extends D{
-    J004() {
-        super(sc.nextInt());
-    }
-    @Override
-    public String m3(Double d) {
-        return D.sc.next();
-    }
-
-    @Override
-    public int m1(int n) {
-       return D.sc.nextInt();
-    }
-
-    @Override
-    public double m2(String s) {
-       return D.sc.nextDouble();
-    }
-
-    @Override
-    void m6() {
-        
-    }
-    public static void main(String[] args) {
-        J004 obj = new J004();
-        obj.m1(D.sc.nextInt());
-        obj.m2(D.sc.next());
-        obj.m3(D.sc.nextDouble());
-        obj.m4();
-        obj.m5(D.sc.next());
-        obj.m6();
-    }
+public class J004{
+	public static void main(String[]args){
+		I1 i1 = new B();
+		out.println(i1.m1(I.sc.nextFloat()));
+	
+		I2 i2 = (B)i1;
+		out.println(i2.m2(I.sc.next().charAt(0)));
+		
+		I i = (B)i2;	
+		out.println(I.m3(I.sc.nextLong()));
+		out.println(i.m4(I.sc.nextDouble()));
+		
+		A a = (B)i;
+		out.println(a.m5(I.sc.nextBoolean()));
+		out.println(a.m6(I.sc.nextInt()));
+	}
 }

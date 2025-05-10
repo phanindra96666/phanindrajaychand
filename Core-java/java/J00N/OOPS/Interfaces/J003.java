@@ -28,9 +28,11 @@ class D implements A,B,C{
 }
 public class J003 {
     public static void main(String[] args) {
-        D obj = new D();
+        A obj = new D();
         obj.m1(D.sc.nextInt());
-        obj.m2(D.sc.next());
-        obj.m3();
+        B obj1 = (B)obj;
+        obj1.m2(D.sc.next());
+        C obj2 = (C) obj1;
+        obj2.m3();
     }
 }
