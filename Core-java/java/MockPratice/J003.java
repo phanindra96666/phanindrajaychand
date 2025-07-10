@@ -7,7 +7,6 @@ public class J003 {
         this(sc.nextInt(), sc.nextInt());
         System.out.println(this.b);
     }
-    J003(int a,int b){
         System.out.println(a+" "+b);
     }
     static int z1(int n){

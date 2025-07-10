@@ -5,7 +5,6 @@ public class AllAlphabhats {
             allAlphabats((char)(al+1));
         }
     }
-        
     public static void main(String[] args) {
         allAlphabats('a');
     }

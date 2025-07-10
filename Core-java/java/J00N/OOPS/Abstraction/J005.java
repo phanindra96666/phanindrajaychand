@@ -1,4 +1,8 @@
-/*Create a java application where we have one concrete class, it contains one parameterized constructor and one defined method, inherit this class into an abstract class that contains one parameterized constructor, one defined method, and two abstract methods, and inherit this class into another concrete class to provide functionality and then invoke all the properties under main method by providing dynamic inputs.*/
+/*Create a java application where we have one concrete class, it contains one parameterized 
+constructor and one defined method, inherit this class into an abstract class that contains one 
+parameterized constructor, one defined method, and two abstract methods, and inherit this class 
+into another concrete class to provide functionality and then invoke all the properties under 
+main method by providing dynamic inputs.*/
 
 
 
@@ -14,9 +18,9 @@ static Scanner sc = new Scanner(System.in);
 }
 
 abstract class A extends Z {
-     A(int n){
-   	super(sc.nextInt());
-     }
+    A(int n){
+        super(sc.nextInt());
+    }
     abstract void m1(int a);
     abstract void m2(String s);
     void m5(){
@@ -26,7 +30,7 @@ abstract class A extends Z {
 
 class B extends A {
     B() {
-         super(sc.nextInt());
+        super(sc.nextInt());
     }
     @Override
     void m1(int a){
@@ -50,6 +54,6 @@ class Main {
         obj.m2(B.sc.next());
         obj.m3();
         obj.m5();
-	obj.m9();
+	    obj.m9();
     }
 }

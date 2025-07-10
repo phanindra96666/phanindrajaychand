@@ -13,7 +13,7 @@ public class PrintDate {
         int year = Integer.parseInt(arr[2]);
 
         if (isLeapYear(year)) {
-            if (month == 1) monthCodes[0] = 5; 
+            if (month == 1) monthCodes[0] = 5;
             if (month == 2) monthCodes[1] = 1;
         }
 
@@ -41,7 +41,7 @@ public class PrintDate {
         sc.close();
     }
 
-    static boolean isLeapYear(int year) {
+    public static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 }

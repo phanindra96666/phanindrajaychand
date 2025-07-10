@@ -17,20 +17,20 @@ public class TimeIntervalsPrint {
         int endMinutes = Integer.parseInt(endParts[1]);
         int endSeconds = Integer.parseInt(endParts[2]);
 
-        // int startTotalSeconds = startHours * 3600 + startMinutes * 60 + startSeconds;
-        // int endTotalSeconds = endHours * 3600 + endMinutes * 60 + endSeconds;
-        //String s="**********Phanindra************";
-        // for (int current = startTotalSeconds;current<=endTotalSeconds;current++) {
-        //     int hours = current/3600;
-        //     int minutes = (current%3600)/60;
-        //     int seconds = current%60;
+        int startTotalSeconds = startHours * 3600 + startMinutes * 60 + startSeconds;
+        int endTotalSeconds = endHours * 3600 + endMinutes * 60 + endSeconds;
+        String s="**********Phanindra************";
+        for (int current = startTotalSeconds;current<=endTotalSeconds;current++) {
+            int hours = current/3600;
+            int minutes = (current%3600)/60;
+            int seconds = current%60;
 
-        //     // System.out.printf("\r%d:%02d:%02d", hours, minutes, seconds);
-        //     //     //System.out.print("\r"+s);
-        //     //     //s=s.substring(1)+s.charAt(0);
+            System.out.printf("\r%d:%02d:%02d", hours, minutes, seconds);
+                System.out.print("\r"+s);
+                s=s.substring(1)+s.charAt(0);
 
-        //     //     //Thread.sleep(1000);
-        // }
+                Thread.sleep(100);
+        }
         if (endSeconds<30 && endMinutes>30 && startMinutes>30){
             System.out.print(((endHours-startHours))+":"+((Math.abs(endMinutes-startMinutes)-1))+":"+(Math.abs(startSeconds+endSeconds)));
         }

@@ -22,6 +22,10 @@ public class LL {
 
     public void addLast(String data){
         Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
         Node curNode = head;
         while (curNode.next!=null) {
             curNode = curNode.next;

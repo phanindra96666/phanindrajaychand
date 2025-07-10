@@ -4,8 +4,7 @@ public class ArmStrong {
         if (n==0) {
            return 0;
         }
-        return (int)Math.pow(n%10, len)+isArmStrong(n/=10, len);
-    }
+        return (int)Math.pow(n%10, len)+isArmStrong(n/=10, len);    }
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
