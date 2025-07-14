@@ -3,10 +3,10 @@ inherit this interface into one concrete class to provide functionality for abst
 and invoke these methods under main by providing dynamic inputs.*/
 import java.util.Scanner;
 interface A {
-    int m1(int n);
+    int m1(int n);//public,abstract
     double m2(String s);
 }
-class B implements A{
+class B implements A {
     static Scanner sc = new Scanner(System.in);
     @Override
     public int m1(int n){

@@ -1,14 +1,14 @@
-public class LL {
+public class LL { 
     Node head;
-    public class Node {
+    public class Node { 
         String data;
         Node next;
 
-        Node(String data){
+        Node(String data){ 
             this.data=data;
             this.next = null;
-        }
-    }
+        } 
+    } 
 
     public void addFirst(String data){
         Node newNode = new Node(data);

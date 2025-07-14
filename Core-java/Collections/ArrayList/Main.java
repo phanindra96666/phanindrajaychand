@@ -11,10 +11,15 @@ class Employee implements Comparable<Employee>{
     //     return -(int)(emp_salary - e.emp_salary);
     // }
 
+    // @Override
+    // public int compareTo(Employee e){
+    //     return - emp_name.compareTo(e.emp_name);
+    // }
     @Override
     public int compareTo(Employee e){
-        return - emp_name.compareTo(e.emp_name);
+        return -(int)(emp_salary -e.emp_salary);
     }
+
 
     private int emp_id;
     private String emp_name;

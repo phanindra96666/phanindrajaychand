@@ -144,8 +144,5 @@ public class Mainn {
         for (Employee e : empList) {
             e.display();
         }
-
-
     }
-    
 }
