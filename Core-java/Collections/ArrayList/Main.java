@@ -7,7 +7,7 @@ import java.util.*;
 
 class Employee implements Comparable<Employee>{
     // @Override
-    // public int compareTo(Employee e){
+    // public int compareTo(Employee e){````
     //     return -(int)(emp_salary - e.emp_salary);
     // }
 
@@ -17,7 +17,7 @@ class Employee implements Comparable<Employee>{
     // }
     @Override
     public int compareTo(Employee e){
-        return -(int)(emp_salary -e.emp_salary);
+        return -(int)(emp_salary - e.emp_salary);
     }
 
 

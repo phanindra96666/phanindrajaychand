@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="images/WhatsApp Video 2023-03-11 at 18.19.13.mp4" type="video/mp4">
+            </video>
+            <nav>
+                <a href="#"><img src="https://www.pngarts.com/files/3/Letter-P-PNG-Image-Transparent.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="beaches.html">BEACHES</a></li>
+                    <li><a href="#">PLACES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li> 
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>California</h1>
+                <a class="hover" id="icon" href="#">Explore</a>
+            </div>
+        </div>        
+        <audio id="mysong">         
+            <source src="images/playlist-front.mp3" type="audio/mp3">
+        </audio>
+        <script>
+        
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        let tem=0;
+        icon.onclick=function(){
+            if(tem==0){
+                mysong.play();
+                tem=1
+            } 
+            else{
+                mysong.pause();
+                tem=0
+            }
+        }
+        </script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    </body>
+</html>
