@@ -35,6 +35,6 @@ public class Pttern {
             currentindex += Math.pow(2, o);
             System.out.println();
         }
-
+        sc.close();
     }
 }
