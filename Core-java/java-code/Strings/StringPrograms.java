@@ -179,9 +179,11 @@ public class StringPrograms {
     }
 
     // 17
+    @SuppressWarnings("StringEquality")
     public static void stringComparison() {
         System.out.println("\n17. == vs equals():");
         String s1 = "Java";
+        @SuppressWarnings("RedundantStringConstructorCall")
         String s2 = new String("Java");
         System.out.println("Using == : " + (s1 == s2)); // false
         System.out.println("Using equals : " + s1.equals(s2)); // true
