@@ -1,4 +1,3 @@
-
 public class Max_Characters {
     public static void main(String[] args) {
         String input = "phpaqutxp";

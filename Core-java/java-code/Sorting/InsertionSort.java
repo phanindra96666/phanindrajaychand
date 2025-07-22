@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
-public class InsertionSort {
-    public static void insertionSort(int arr[]){ 
+public class InsertionSort { 
+    public static void insertionSort(int arr[]) { 
         int n = arr.length;
         int j;
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++) { 
             int key = arr[i];
             for(j=i-1;j>=0;j--){ 
                 if (arr[j]>key) { 

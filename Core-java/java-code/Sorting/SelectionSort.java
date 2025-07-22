@@ -10,9 +10,9 @@ public class SelectionSort {
                         minIndex = j;
                     }
                 }
-                int temp = arr[minIndex];
-                arr[minIndex] = arr[i];
-                arr[i] = temp;
+                int temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
                 System.out.println("i = "+i+"  "+Arrays.toString(arr));
             }
     }
