@@ -13,7 +13,7 @@ public class PanValidator {
         String name = "Phani";
         for (String input : inputs) {
             System.out.println("Input: " + input);
-            if (isValidPAN(input) && input.charAt(4)==name.charAt(0)) {
+            if (isValidPAN(input) && input.charAt(4)==name.charAt(0)) { 
                 System.out.println("Valid PAN Number\n");
             } 
             else { 
@@ -23,7 +23,7 @@ public class PanValidator {
     }
 
     public static boolean isValidPAN(String pan) {
-        return pan.matches("[A-Z]{3}[CHATPE]{1}[A-Z]{1}[0-9]{4}[A-Z]");
+        return pan.matches("[A-Z]{3}[CHATPF]{1}[A-Z]{1}[0-9]{4}[A-Z]");
     }
 
 }
