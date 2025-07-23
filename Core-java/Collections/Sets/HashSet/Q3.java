@@ -7,9 +7,9 @@ public class Q3 {
 
         set.add("Java");
         set.add("Python");
-        set.add("Java");     
+        set.add("Java");
         set.add(null);
-        set.add(null); 
+        set.add(null);
 
         System.out.println("HashSet elements using iterator:");
         Iterator<String> iterator = set.iterator();

@@ -15,11 +15,11 @@ public class Q10 {
             }
         }
 	
-	for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             if (entry.getValue() == 1) {
                 System.out.print(entry.getKey() + " ");
             }
         }	
-	
+        
     }
 }

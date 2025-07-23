@@ -1,4 +1,3 @@
-package Threads;
 
 class MyRunnable implements Runnable {
 	@Override

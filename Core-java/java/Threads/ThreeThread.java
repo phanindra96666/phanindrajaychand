@@ -1,5 +1,4 @@
-package Threads;
-import java.util.Scanner;
+import java.util.Scanner; 
 class c1{
 	public float m1(String s) {
 		System.out.println(s);

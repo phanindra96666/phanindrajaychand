@@ -23,8 +23,6 @@ public class Q8{
 			System.out.print(x+" ");//4
 		}
 		
-		
-		
 		Iterator <Integer> itr = al.iterator();
 		while(itr.hasNext()){
 			System.out.print(itr.next()+" ");//6

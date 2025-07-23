@@ -2,7 +2,6 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 public class Q1 { 
-
     public static void main(String[] args) { 
         LinkedHashSet<Integer> set1 = new LinkedHashSet<>();
         set1.add(10);
