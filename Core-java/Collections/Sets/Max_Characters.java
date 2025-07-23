@@ -19,32 +19,41 @@ public class Max_Characters {
         //         maxChar = entry.getKey();
         //     }
         // }
-        int max = 0;
-        char c = 0;
-        for(int i = 0; i < s.length(); i++) {
-            int count = 1;
-            for(int j = i + 1; j < s.length(); j++) {
-                if( s.charAt(i) == (s.charAt(j))) {
-                    count++;
-                }
+        // int max = 0;
+        // char c = 0;
+        // for(int i = 0; i < s.length(); i++) {
+        //     int count = 1;
+        //     for(int j = i + 1; j < s.length(); j++) {
+        //         if( s.charAt(i) == (s.charAt(j))) {
+        //             count++;
+        //         }
+        //     }
+        //     if (max<count) {
+        //         max = count;
+        //         c = s.charAt(i);
+        //     }
+        // }
+        // StringBuilder res = new StringBuilder();
+        // for(int i = 0; i < max; i++){
+        //     res.append(c);
+        // }
+
+        // for(char ch : s.toCharArray()){
+        //     if (ch != c) {
+        //         res.append(ch);
+        //     }
+        // }
+        String x = "";
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==s.charAt(0)){
+                x = s.charAt(i)+x;
             }
-            if (max<count) {
-                max = count;
-                c = s.charAt(i);
+            else{
+                x = x+s.charAt(i);
             }
         }
-        StringBuilder res = new StringBuilder();
-        for(int i = 0; i < max; i++){
-            res.append(c);
-        }
 
-        for(char ch : s.toCharArray()){
-            if (ch != c) {
-                res.append(ch);
-            }
-        }
-
-
+        
         // StringBuilder result = new StringBuilder();
 
         // for (int i = 0; i < maxFreq; i++) {
@@ -57,6 +66,7 @@ public class Max_Characters {
         //     }
         // }
 
-        return res.toString();
+        // return res.toString();
+        return x;
     }
 }

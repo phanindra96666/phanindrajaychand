@@ -12,14 +12,14 @@ public class Q7{
 	//Collections.reverse(al);//des
 	for(int i=0;i<al.size();i++){
 		for(int j=i+1;j<al.size();j++){
-			if(al.get(i) >al.get(i)){
+			if(al.get(i) >al.get(j)){
 				int t = al.get(i);
 				al.set(i,al.get(j));
 				al.set(j,t);
 			}
 		}
 	}
-        for(int num : al){
+	for(int num : al){
 		System.out.print(num+" ");
 	}
     }

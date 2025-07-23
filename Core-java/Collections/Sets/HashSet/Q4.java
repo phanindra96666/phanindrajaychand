@@ -3,6 +3,7 @@ import java.util.HashSet;
 public class Q4 {
     public static void main(String[] args) {
         HashSet<String> set1 = new HashSet<>();
+        
         set1.add("Apple");
         set1.add("Banana");
         set1.add("Cherry");

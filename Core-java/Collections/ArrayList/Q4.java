@@ -5,7 +5,7 @@ public class Q4{
 		Boolean print = true;
 		ArrayList<Integer> al = new ArrayList<>();
 		int n = sc.nextInt();
-		for(int i=0;i<n;i++){
+		for(int i=0;i<n;i++) {
 			al.add(sc.nextInt());
 		}
 		Iterator<Integer> iterator = al.iterator();

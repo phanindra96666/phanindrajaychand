@@ -16,15 +16,17 @@ public class Q5{
 		Iterator<Integer> iterator = alM2.iterator();
 		Iterator<Integer> iterator1 = alM3.iterator();
 
-                System.out.println("Elements in ArrayList:");
-       		while (iterator.hasNext()) {
+        System.out.println("Elements in ArrayList:");
+
+		while (iterator.hasNext()) {
 			System.out.print(iterator.next()+" ");
-              	}
+		}
 		System.out.println();
 		System.out.println("Elements in ArrayList:");
-       		while (iterator1.hasNext()) {
+		
+		while (iterator1.hasNext()) {
 			System.out.print(iterator1.next()+" ");
-              	}
+		}
 
 		System.out.println("common ele");
 		ArrayList<Integer> commonElements = new ArrayList<>(alM2);
