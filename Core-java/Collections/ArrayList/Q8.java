@@ -12,7 +12,7 @@ public class Q8{
 
 		Iterator<Integer> iterator = al.iterator();
        		while (iterator.hasNext()) {
-            		System.out.print(iterator.next()+" ");//2
+            	System.out.print(iterator.next()+" ");//2
         	}
 			
 		for(int i=0;i<al.size();i++){
