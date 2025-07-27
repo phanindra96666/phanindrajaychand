@@ -133,6 +133,7 @@ public class StringPrograms {
         for (char ch : chars) {
             System.out.print(ch+" ");
         }
+        System.out.println();
     }
 
     // 12

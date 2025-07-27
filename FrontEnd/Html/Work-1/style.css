@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0faff;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1000px;
+}
+
+th, td {
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+th th {
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+}
+
+td.holiday {
+  background-color: #99d8ff;
+  writing-mode: vertical-rl;
+  font-weight: bold;
+}
+
+
+td.footer {
+  background-color: #99d8ff;
+  font-weight: bold;
+}
+
+td[colspan="5"] {
+  background-color: #99d8ff;
+  font-weight: bold;
+}
+
+td[colspan="2"], td[colspan="6"] {
+  background-color: #99d8ff;
+  font-weight: bold;
+}
+
+td.blank {
+  background-color: #1de823;
+}

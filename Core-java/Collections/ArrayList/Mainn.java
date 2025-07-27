@@ -48,8 +48,7 @@ class Employee {
     }
 }
 
-class SalaryComparator implements Comparator<Employee>
-{
+class SalaryComparator implements Comparator<Employee> {
     public int compare(Employee x,Employee y)
     {
         // if(x.getEmp_salary()==y.getEmp_salary())

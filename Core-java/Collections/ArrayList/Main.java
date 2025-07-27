@@ -5,7 +5,7 @@
 //again display the emp in decs order based on salary
 import java.util.*;
 
-class Employee implements Comparable<Employee>{ 
+class Employee implements Comparable<Employee> { 
     // @Override
     // public int compareTo(Employee e){````
     //     return -(int)(emp_salary - e.emp_salary);

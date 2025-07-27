@@ -1,4 +1,4 @@
-public class VehicleNumberValidator {
+public class VehicleNumberValidator { 
     public static void main(String[] args) { 
         // String[] inputs = {
         //     "KA01AB1234",
