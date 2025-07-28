@@ -1,5 +1,5 @@
 import java.util.*;
-public class cricularPrime{
+public class cricularPrime {
     public static boolean isPrime(int n){
         if(n<2){
             return false;
