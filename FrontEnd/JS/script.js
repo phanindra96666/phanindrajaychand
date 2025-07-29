@@ -69,21 +69,53 @@
 // heros.shift();
 
 let num = [1,2,3,4,5,6];
-console.log(num);
-num.splice(1,2,101,102);
-console.log(num);
+// console.log(num);
+// num.splice(1,2,101,102);
+// console.log(num);
 
-num.splice(2,0,3.5);
-console.log(num);
+// num.splice(2,0,3.5);
+// console.log(num);
+
+// num.forEach((n)=>{
+//     console.log(n);
+// });
+// console.log("Squaring number");
+
+// num.forEach((n)=>{
+//     console.log(`printing numbers using forEach ${n*n}`);
+    
+// })
 
 
+// let newArray = num.map((val)=>{
+//     console.log(val*5+" hiii");
+// })
+
+// let evenArray = num.filter((val)=>{
+//     return val%2===0;
+// });
+
+// console.log(evenArray);
+
+// let greaterThan3 = num.filter((val)=>{
+//     return val>3;
+// });
+
+// console.log(greaterThan3);
 
 
+const output = num.reduce((prev,cur)=>{
+    return prev > cur ? prev : cur;
+});
+
+console.log(output);
 
 
+// const output = num.reduce((prev,cur)=>{
+//     return prev + cur;
+// });
 
-
-
+// console.log(output);
 
 
 // let obj = {
