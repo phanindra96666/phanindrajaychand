@@ -1,11 +1,12 @@
 import java.util.*;
 class Q1{
     public static void main(String[] args) {
-        HashMap<Integer,Integer> map = new HashMap<>();
-        int a [] = {1,2,3,4,5,6,5,4,3,2,1};
+        LinkedHashMap<Integer,Integer> map = new LinkedHashMap<>();
+        int a [] = {10,5,4,6,7,5,4,5,10,7,7};
         for(int i=0;i<a.length;i++){
             map.put(a[i], map.getOrDefault(a[i], 0)+1);
         }
+        
 
 
         // Set<Integer> s = map.keySet();
