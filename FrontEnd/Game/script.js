@@ -1,6 +1,6 @@
 const target = document.getElementById('target');
 const scoreEl = document.getElementById('score');
-const timeEl = document.getElementById('time');
+const timeEl = document.getElementById('time');  
 const startBtn = document.getElementById('startBtn');
 
 let score = 0;
@@ -26,6 +26,7 @@ function startGame() {
   scoreEl.textContent = score;
   timeEl.textContent = time;
   gameStarted = true;
+  startBtn.style.visibility = 'hidden';
   target.style.display = 'block';
   moveTarget();
 
@@ -42,6 +43,7 @@ function endGame() {
   clearInterval(timerInterval);
   target.style.display = 'none';
   alert(`Game over! You scored ${score} points.`);
+  startBtn.style.visibility = 'visible';
   gameStarted = false;
 }
 
