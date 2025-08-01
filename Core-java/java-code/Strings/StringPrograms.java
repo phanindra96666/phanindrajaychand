@@ -53,13 +53,23 @@ public class StringPrograms {
     // 3
     public static void longestWord() {
         System.out.println("\n3. Longest Word:");
-        String input = "Java is a powerful programming language";
-        String[] words = input.split(" ");
+        String input = " Java is a powerful programming language ";
         String longest = "";
-        for (String word : words) {
-            if (word.length() > longest.length()) {
-                longest = word;
+        while (!input.isEmpty()) {
+            int w = input.indexOf(' ',1);
+            String ww = input.substring(0,w+1);
+            // String[] words = input.split(" ");
+            
+            // for (String word : words) {
+            //     if (word.length() > longest.length()) {
+            //         longest = word;
+            //     }
+            // }
+
+            if (longest.length()<ww.length()) {
+                longest = ww;
             }
+             input = input.replaceFirst(ww, "");
         }
         System.out.println("Longest word: " + longest);
     }
