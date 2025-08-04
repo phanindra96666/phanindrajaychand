@@ -16,9 +16,6 @@ public class word_Size {
 				if(b){ 
 					System.out.println("found");
                 } 
-                else {
-                    System.out.println("Not Found");
-                } 
 			} 
 		} 
 	} 
