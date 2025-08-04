@@ -1,5 +1,5 @@
 import java.util.*;
-public class word_Size {  
+public class word_Size { 
 	public static void main(String[] args) { 
 		Scanner obj = new Scanner(System.in);
 		String s = obj.nextLine();
@@ -16,6 +16,9 @@ public class word_Size {
 				if(b){ 
 					System.out.println("found");
                 } 
+                else{
+                    System.out.println("Not Found");
+                }
 			} 
 		} 
 	} 
