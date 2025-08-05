@@ -1,13 +1,19 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class f2 {
-    public static void main(String[] args) {
-        String inputFilePath = "C:\\Users\\phani\\OneDrive\\Desktop\\first.txt"; 
-
+    public static void main(String[] args) throws IOException { 
         try {
-            File inputFile = new File(inputFilePath);
+            File inputFile = new File("C:\\Users\\phani\\OneDrive\\Desktop\\first.txt");
+            inputFile.createNewFile();
+            FileWriter fw = new FileWriter(inputFile,true);
+            fw.write("Hello");
+            fw.write("\nHii");
+            fw.flush();
+            fw.close();
             Scanner scanner = new Scanner(inputFile);
 
             int lineCount = 0;
