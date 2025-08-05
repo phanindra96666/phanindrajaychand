@@ -1,22 +1,29 @@
-import java.util.*;
+import java.util.Scanner;
 public class word_Size { 
 	public static void main(String[] args) { 
-		Scanner obj = new Scanner(System.in);
-		String s = obj.nextLine();
-		String w = obj.nextLine();
-		for(int i=0; i<s.length(); i++) { 
-			if(s.charAt(i)==w.charAt(0)) { 
-				Boolean b = true;
-				for(int j=1; j<w.length(); j++) { 
-					if(w.charAt(j)!=s.charAt(i+j)) { 
-						b= false;
-						break;
-					} 
-				} 
-				if(b){ 
-					System.out.println("found");
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		int w=0;
+		for(int s=0, e=1; e<str.length(); e++) { 
+			if(str.charAt(e)==' ') { 
+				if(e-s > w) { 
+					w= e-s;
                 } 
+				s= e+1;
 			} 
 		} 
+		for(int i=w; i>=1; i--) { 
+            for(int s=0, e=1; e<str.length(); e++) { 
+                if(str.charAt(e)==' ') { 
+                    if(e-s == i) { 
+                        for(int j=s; j<e; j++) { 
+                            System.out.print(str.charAt(j));
+                        } 
+                        System.out.println();
+                    } 
+                    s= e+1;
+                } 
+            } 
+        } 
 	} 
 } 
