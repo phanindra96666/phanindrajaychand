@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Promise to You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0);
+      
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .card {
+      background-color: #fff;
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      text-align: center;
+      color: #b30059;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      margin: 15px 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+      color: #7303c0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 25px;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="messageCard">
+    <h1>My Promise to You</h1>
+    <p>This Raksha Bandhan, I don’t just accept your rakhi —<br>
+    I accept the love, the trust, and the bond it represents.</p>
+
+    <p>A promise to stand by you —<br>
+    not just during the happy times,<br>
+    but when things get quiet, tough, or uncertain.</p>
+
+    <p>No matter where life takes us,<br>
+    no matter how much changes —<br>
+    one thing will always remain the same:<br>
+    you’ll never face anything alone.</p>
+
+    <p>I’m your brother —<br>
+    not just today, but for a lifetime.</p>
+
+    <p>Sure, I could buy you a gift —<br>
+    something nice, maybe even expensive.<br>
+    But Raksha Bandhan isn’t about money.<br>
+    It’s about meaning.</p>
+
+    <p>This message comes from the heart.<br>
+    I care about you deeply, and I always will.<br>
+    No matter how hard life gets,<br>
+    no matter what situation we’re in,<br>
+    I’ll be there for you.</p>
+
+    <p>Because being your brother is more than just a bond —<br>
+    it’s a blessing I carry with pride.</p>
+
+    <div class="footer">
+      Always. Forever.
+    </div>
+  </div>
+
+  <script>
+    // Optional: Add fade-in animation when card enters view
+    window.addEventListener('load', () => {
+      document.getElementById('messageCard').style.opacity = 1;
+    });
+  </script>
+
+</body>
+</html>

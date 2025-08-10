@@ -19,13 +19,13 @@ public class wow {
                 }
             }
 
-            s = sb.toString().trim(); 
+            s = sb.toString().trim();
             totalCount += count;
 
-            System.out.println(firstWord + ", Count: " + count);
+            System.out.println(firstWord +" " + count);
         }
 
-        System.out.println("Total words removed: " + totalCount);
-        System.out.println("String is:"+s);
+        // System.out.println("Total words removed: " + totalCount);
+        // System.out.println("String is:"+s);
     }
 }

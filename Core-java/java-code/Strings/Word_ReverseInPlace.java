@@ -1,6 +1,6 @@
 public class Word_ReverseInPlace{
     public static void main(String[] args){
-        String s = "to print the all given words";
+        String s = " to print the all given words ";
         String word = "";
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
@@ -14,8 +14,8 @@ public class Word_ReverseInPlace{
                 word = "";
             }
         }
-        for (int j = word.length() - 1; j >= 0; j--) {
-            System.out.print(word.charAt(j));
-        }
+        // for (int j = word.length() - 1; j >= 0; j--) {
+        //     System.out.print(word.charAt(j));
+        // }
     }
 }

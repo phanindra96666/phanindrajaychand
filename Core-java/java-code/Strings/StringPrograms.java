@@ -190,7 +190,6 @@ public class StringPrograms {
     }
 
     // 17
-    @SuppressWarnings("StringEquality")
     public static void stringComparison() {
         System.out.println("\n17. == vs equals():");
         String s1 = "Java";
