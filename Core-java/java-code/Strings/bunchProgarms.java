@@ -51,7 +51,7 @@ public class bunchProgarms {
         }
     }
 
-    // 53. Print all words in two strings by one time only (unique combined)
+    // 53. Print all words in two strings by one time only
   public static void allUniqueWords(String s1, String s2) {
     String combined = " "+s1 + " " + s2+" ";
     System.out.println(combined);
@@ -68,7 +68,6 @@ public class bunchProgarms {
             System.out.println(word);
             combined = combined.replace(word, "");
         }
-        
     }
 }
 
