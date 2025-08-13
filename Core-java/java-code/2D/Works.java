@@ -280,6 +280,7 @@ public class Works {
         // isMatch(a, r, c);
         // sort(a, r, c);
         multi(a, aa, r1, c, c1);
+        trace(a, r, c);
         sc.close();
     }
 }
