@@ -14,26 +14,26 @@ public class Works {
         System.out.println("sum:"+sum);
     }
 
-   public static void multi(int[][] A, int[][] B, int r1, int c1, int c2) {
+    public static void multi(int[][] A, int[][] B, int r1, int c1, int c2) {
 
-    int[][] C = new int[r1][c2];
+        int[][] C = new int[r1][c2];
 
-    for (int i = 0; i < r1; i++) {
-        for (int j = 0; j < c2; j++) {
-            C[i][j] = 0;
-            for (int k = 0; k < c1; k++) {
-                C[i][j] += A[i][k] * B[k][j];
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                C[i][j] = 0;
+                for (int k = 0; k < c1; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
             }
         }
-    }
-    System.out.println();
-    for (int i = 0; i < r1; i++) {
-        for (int j = 0; j < c2; j++) {
-            System.out.print(C[i][j] + " ");
-        }
         System.out.println();
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
-}
 
 
     public static void sort(int [][] a,int r,int c){
