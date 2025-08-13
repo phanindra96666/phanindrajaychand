@@ -4,6 +4,7 @@ class Q1{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
+        int target = 5;
         int [] [] arr = new int[n][m];
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
@@ -13,7 +14,9 @@ class Q1{
         System.out.println("O/p");
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-               System.out.print(arr[i][j]+" ");
+                if(arr[i][j]==target){
+                    System.out.print(i+" "+j);
+                }
             }
             System.out.println();
         }
