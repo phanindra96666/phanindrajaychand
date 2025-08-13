@@ -20,5 +20,6 @@ class Q1{
             }
             System.out.println();
         }
+        sc.close();
     }
 }
