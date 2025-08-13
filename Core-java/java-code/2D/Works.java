@@ -2,6 +2,18 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class Works {
 
+    public static void trace(int a [][],int r,int c){
+        int sum = 0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                if (i==j) {
+                    sum+=a[i][j];
+                }
+            }
+        }
+        System.out.println("sum:"+sum);
+    }
+
    public static void multi(int[][] A, int[][] B, int r1, int c1, int c2) {
 
     int[][] C = new int[r1][c2];
