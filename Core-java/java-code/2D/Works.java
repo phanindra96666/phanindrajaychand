@@ -57,37 +57,30 @@ public class Works {
                 System.out.print(a[i][j]+" ");
             }
             System.out.println();
-        }
-
-        
+        } 
     }
 
-    public static boolean isEqualRowMatrix(int[][] arr) {
-            for (int i = 1; i < arr.length; i++) {
-                for (int j = 0; j < arr[0].length; j++) {
-                    if (arr[i][j] != arr[0][j]) return false;
+    public static void isEqualRowMatrix(int[][] arr,int r,int c) { 
+        boolean row = true;
+        boolean col = true;
+        for (int i = 1; i < r; i++) {
+            for (int j = 0; j <c; j++) {
+                if (arr[i][j] != arr[i][0]){//first col in every row
+                    row = false;
+                }
+                if(arr[i][j] != arr[0][j]){//first row in every col
+                    col = false;
                 }
             }
-            return true;
         }
-
-        public static boolean isEqualColumnMatrix(int[][] arr) {
-            for (int j = 1; j < arr[0].length; j++) {
-                for (int i = 0; i < arr.length; i++) {
-                    if (arr[i][j] != arr[i][0]) return false;
-                }
-            }
-            return true;
+        if (col) {
+            System.out.println("col same");
         }
-
-    public static void isMatch(int[][] a,int r,int c){
-        if (isEqualRowMatrix(a)) {
-            System.out.println("EqualRow");
-        }
-        if (isEqualColumnMatrix(a)) {
-            System.out.println("EqualColumn");
+        if (row) {
+            System.out.println("row same");
         }
     }
+
 
     public static void diagonalNumber(int[][] a,int r,int c){
         System.out.println("Result:");
@@ -277,9 +270,8 @@ public class Works {
         // printReverse(a, r, c);
         // diagonalCheck(a, r, c);
         // diagonalNumber(a, r, c);
-        // isMatch(a, r, c);
-        // sort(a, r, c);
-        multi(a, aa, r1, c, c1);
+        // isEqualRowMatrix(aa, r, c);
+                multi(a, aa, r1, c, c1);
         trace(a, r, c);
         sc.close();
     }

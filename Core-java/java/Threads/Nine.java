@@ -1,4 +1,3 @@
-package Threads;
 import java.util.Scanner;
 public class Nine extends MyClass implements Runnable {
 	

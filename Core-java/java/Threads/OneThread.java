@@ -1,4 +1,3 @@
-package Threads;
 
 public class OneThread {
     public static void main(String[] args) {
